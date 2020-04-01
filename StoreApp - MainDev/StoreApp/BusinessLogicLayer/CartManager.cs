@@ -1,14 +1,9 @@
 ﻿using StoreApp.Model;
 using StoreApp.RepositoryLayer;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StoreApp.BusinessLogicLayer
 {
-   public class CartManager
+    public class CartManager
     {
 
         #region Constructors
