@@ -204,7 +204,6 @@ D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\ko\System.Windows
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\ru\System.Windows.Interactivity.resources.dll
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
-D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.csprojAssemblyReference.cache
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\MainWindow.g.cs
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\View\Home.g.cs
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\View\ItemSelectionView.g.cs
@@ -225,3 +224,5 @@ D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.csproj.C
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.csproj.CopyComplete
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.exe
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.pdb
+D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\View\SignUp.g.cs
+D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\View\SignUp.baml

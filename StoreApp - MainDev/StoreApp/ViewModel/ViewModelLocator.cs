@@ -24,6 +24,7 @@ namespace StoreApp.ViewModel
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
 
             SimpleIoc.Default.Register<MainViewModel>();//New
+            SimpleIoc.Default.Register<SignUpViewModel>();
             SimpleIoc.Default.Register<ItemSelectionViewModel>();//New
             SimpleIoc.Default.Register<ShowCartViewModel>();//New
             SimpleIoc.Default.Register<HomeViewModel>();//New
@@ -38,6 +39,8 @@ namespace StoreApp.ViewModel
 
 
         public HomeViewModel HomeViewModel => ServiceLocator.Current.GetInstance<HomeViewModel>();
+
+        public SignUpViewModel SignUpViewModel => ServiceLocator.Current.GetInstance<SignUpViewModel>();
 
         public MainViewModel Main => ServiceLocator.Current.GetInstance<MainViewModel>();
 
