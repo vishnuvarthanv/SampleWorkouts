@@ -166,5 +166,8 @@
     <Folder Include="Common\" />
     <Folder Include="Converter\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Groceries1.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
