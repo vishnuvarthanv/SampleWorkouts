@@ -39,7 +39,8 @@ namespace StoreApp.ViewModel
         }
         private void LoadHomePage()
         {
-            _navigationService.NavigateTo("Home");
+            //_navigationService.NavigateTo("Home");
+            _navigationService.NavigateTo("SignUp");
         }
         ////public override void Cleanup()
         ////{

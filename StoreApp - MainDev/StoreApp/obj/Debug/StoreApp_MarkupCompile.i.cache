@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\
+D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\
 StoreApp
 none
 false
 DEBUG;TRACE
-D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\App.xaml
-41616059196
+D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\App.xaml
+6-1929097351
 
-31-891564690
-1261961034524
-MainWindow.xaml;View\Home.xaml;View\ItemSelectionView.xaml;View\ShowCartView.xaml;
+40-882657369
+1271073070310
+MainWindow.xaml;View\Home.xaml;View\ItemSelectionView.xaml;View\ShowCartView.xaml;View\SignUp.xaml;View\UserProfiles.xaml;
 
 True
 

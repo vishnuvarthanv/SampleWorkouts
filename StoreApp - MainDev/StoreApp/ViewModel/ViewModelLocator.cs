@@ -24,9 +24,11 @@ namespace StoreApp.ViewModel
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
 
             SimpleIoc.Default.Register<MainViewModel>();//New
+            SimpleIoc.Default.Register<SignUpViewModel>();
             SimpleIoc.Default.Register<ItemSelectionViewModel>();//New
             SimpleIoc.Default.Register<ShowCartViewModel>();//New
             SimpleIoc.Default.Register<HomeViewModel>();//New
+            SimpleIoc.Default.Register<UserProfilesViewModel>();//New
             SetupNavigation();//New 
         }
         private void SetupNavigation()//New
@@ -39,11 +41,15 @@ namespace StoreApp.ViewModel
 
         public HomeViewModel HomeViewModel => ServiceLocator.Current.GetInstance<HomeViewModel>();
 
+        public SignUpViewModel SignUpViewModel => ServiceLocator.Current.GetInstance<SignUpViewModel>();
+
         public MainViewModel Main => ServiceLocator.Current.GetInstance<MainViewModel>();
 
         public ItemSelectionViewModel ItemSelectionViewModel => ServiceLocator.Current.GetInstance<ItemSelectionViewModel>();
 
         public ShowCartViewModel ShowCartViewModel => ServiceLocator.Current.GetInstance<ShowCartViewModel>();
+
+        public UserProfilesViewModel UserProfilesViewModel => ServiceLocator.Current.GetInstance<UserProfilesViewModel>();
 
         /// <summary>
         /// Cleans up all the resources.

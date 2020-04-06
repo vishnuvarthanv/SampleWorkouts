@@ -5,8 +5,10 @@
     /// </summary>
     public enum NavigationPage
     {
+        SignUp,
         Home,
         ItemSelectionView,
-        ShowCartView
+        ShowCartView,
+        UserProfiles
     }
 }
