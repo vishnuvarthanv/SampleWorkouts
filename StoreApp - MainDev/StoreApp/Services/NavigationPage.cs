@@ -8,6 +8,7 @@
         SignUp,
         Home,
         ItemSelectionView,
-        ShowCartView
+        ShowCartView,
+        UserProfiles
     }
 }

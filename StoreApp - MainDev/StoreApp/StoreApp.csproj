@@ -91,16 +91,19 @@
     <Compile Include="RepositoryLayer\IDataProvider.cs" />
     <Compile Include="RepositoryLayer\ProductRepository.cs" />
     <Compile Include="RepositoryLayer\SqliteDataProvider.cs" />
+    <Compile Include="Services\CloseWindowEventArgs.cs" />
     <Compile Include="Services\DialogService.cs" />
     <Compile Include="Services\IDialogService.cs" />
     <Compile Include="Services\INavigationService.cs" />
     <Compile Include="Services\NavigationPage.cs" />
     <Compile Include="Services\NavigationService.cs" />
+    <Compile Include="Services\OpenEditWindowArgs.cs" />
     <Compile Include="ViewModel\HomeViewModel.cs" />
     <Compile Include="ViewModel\ItemSelectionViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ShowCartViewModel.cs" />
     <Compile Include="ViewModel\SignUpViewModel.cs" />
+    <Compile Include="ViewModel\UserProfilesViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Compile Include="View\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
@@ -113,6 +116,9 @@
     </Compile>
     <Compile Include="View\SignUp.xaml.cs">
       <DependentUpon>SignUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserProfiles.xaml.cs">
+      <DependentUpon>UserProfiles.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -141,6 +147,10 @@
     <Page Include="View\SignUp.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\UserProfiles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

@@ -175,6 +175,7 @@ D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\GalaSoft.MvvmLigh
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\GalaSoft.MvvmLight.Platform.dll
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\Microsoft.Expression.Interactions.dll
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\System.Data.SQLite.dll
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\System.Windows.Interactivity.dll
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\GalaSoft.MvvmLight.pdb
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\GalaSoft.MvvmLight.xml
@@ -184,6 +185,8 @@ D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\GalaSoft.MvvmLigh
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\GalaSoft.MvvmLight.Platform.xml
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\Microsoft.Xaml.Behaviors.pdb
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\System.Data.SQLite.xml
+D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\System.Data.SQLite.dll.config
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
@@ -208,6 +211,8 @@ D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\MainWindow.g.cs
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\View\Home.g.cs
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\View\ItemSelectionView.g.cs
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\View\ShowCartView.g.cs
+D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\View\SignUp.g.cs
+D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\View\UserProfiles.g.cs
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\App.g.cs
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp_MarkupCompile.cache
@@ -217,6 +222,8 @@ D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\MainWindow.baml
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\View\Home.baml
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\View\ItemSelectionView.baml
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\View\ShowCartView.baml
+D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\View\SignUp.baml
+D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\View\UserProfiles.baml
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.g.resources
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.Properties.Resources.resources
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.csproj.GenerateResource.cache
@@ -224,5 +231,3 @@ D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.csproj.C
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.csproj.CopyComplete
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.exe
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.pdb
-D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\View\SignUp.g.cs
-D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\View\SignUp.baml

@@ -1,6 +1,7 @@
 ﻿//using FriendEditor.EventArgs;
 //using FriendEditor.Views;
 using GalaSoft.MvvmLight.Ioc;
+using StoreApp.View;
 
 namespace StoreApp.Services
 {
@@ -21,7 +22,7 @@ namespace StoreApp.Services
 
             SimpleIoc.Default.Register(() => args);
 
-            EditWindow editWindow = new EditWindow();
+            UserProfiles editWindow = new UserProfiles();
             return editWindow.ShowDialog();
         }
     }

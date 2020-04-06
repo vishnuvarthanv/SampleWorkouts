@@ -1,6 +1,4 @@
-﻿using FriendEditor.EventArgs;
-
-namespace StoreApp.Services
+﻿namespace StoreApp.Services
 {
     public interface IEditWindowController
     {

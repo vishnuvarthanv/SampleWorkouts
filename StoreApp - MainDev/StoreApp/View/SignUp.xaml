@@ -118,7 +118,8 @@
                          Height="20"
                          Margin="5,2"
                          HorizontalAlignment="Left"
-                         VerticalAlignment="Center" />
+                         VerticalAlignment="Center"
+                         Text="{Binding UserId, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
                 <TextBlock Grid.Row="1"
                            Grid.Column="0"
                            Width="Auto"

@@ -28,6 +28,7 @@ namespace StoreApp.ViewModel
             SimpleIoc.Default.Register<ItemSelectionViewModel>();//New
             SimpleIoc.Default.Register<ShowCartViewModel>();//New
             SimpleIoc.Default.Register<HomeViewModel>();//New
+            SimpleIoc.Default.Register<UserProfilesViewModel>();//New
             SetupNavigation();//New 
         }
         private void SetupNavigation()//New
@@ -47,6 +48,8 @@ namespace StoreApp.ViewModel
         public ItemSelectionViewModel ItemSelectionViewModel => ServiceLocator.Current.GetInstance<ItemSelectionViewModel>();
 
         public ShowCartViewModel ShowCartViewModel => ServiceLocator.Current.GetInstance<ShowCartViewModel>();
+
+        public UserProfilesViewModel UserProfilesViewModel => ServiceLocator.Current.GetInstance<UserProfilesViewModel>();
 
         /// <summary>
         /// Cleans up all the resources.

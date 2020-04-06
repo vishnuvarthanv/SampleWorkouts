@@ -22,8 +22,14 @@ namespace StoreApp.ViewModel
         private void Login()
         {
             bool isLoginSuccess = true;
-            if (isLoginSuccess)
+            if (isLoginSuccess & UserId=="admin")
+            {
+                _navigationService.NavigateTo("UserProfiles");
+            }
+            else
+            {
                 _navigationService.NavigateTo("ItemSelectionView");
+            }
         }
 
         private void SignUp()
@@ -48,6 +54,12 @@ namespace StoreApp.ViewModel
         {
             get => _myProperty;
             set => Set(ref _myProperty, value);
+        }
+
+        public string UserId
+        {
+            get => _userId;
+            set => Set(ref _userId, value);
         }
 
         public Visibility IsSignIn
@@ -108,6 +120,7 @@ namespace StoreApp.ViewModel
         private Visibility _isSignIn = Visibility.Collapsed;
         private Visibility _isSignUp = Visibility.Collapsed;
         private Visibility _isDefaultPage = Visibility.Visible;
+        private string _userId = string.Empty;
         #endregion Private Variables
     }
 }
