@@ -10,6 +10,7 @@
         Width="470"
         Height="430"
         DataContext="{Binding Main, Source={StaticResource Locator}}"
+        SizeToContent="WidthAndHeight"
         mc:Ignorable="d">
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">
@@ -17,9 +18,6 @@
         </i:EventTrigger>
     </i:Interaction.Triggers>
     <Grid>
-        <Frame x:Name="MainFrame"
-               HorizontalAlignment="Stretch"
-               VerticalAlignment="Stretch"
-               NavigationUIVisibility="Hidden" />
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" />
     </Grid>
 </Window>

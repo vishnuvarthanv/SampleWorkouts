@@ -91,6 +91,7 @@
     <Compile Include="RepositoryLayer\IDataProvider.cs" />
     <Compile Include="RepositoryLayer\ProductRepository.cs" />
     <Compile Include="RepositoryLayer\SqliteDataProvider.cs" />
+    <Compile Include="RepositoryLayer\UserProfileDataProvider.cs" />
     <Compile Include="Services\CloseWindowEventArgs.cs" />
     <Compile Include="Services\DialogService.cs" />
     <Compile Include="Services\IDialogService.cs" />
