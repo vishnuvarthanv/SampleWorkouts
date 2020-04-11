@@ -15,12 +15,17 @@ namespace StoreApp.ViewModel
 {
     public class UserProfilesViewModel : ViewModelBase
     {
+        #region Constructor
         public UserProfilesViewModel(INavigationService<NavigationPage> navigationService)
         {
             _navigationService = navigationService;
             LoadCommand = new RelayCommand(OnLoad);
-            EditCommand = new RelayCommand<IUserProfile>(Modify, usr => SelectedUserProfile != null);
+            EditCommand = new RelayCommand<IUserProfile>(Modify, SelectedUserProfile != null);
+            AddCommand = new RelayCommand<IUserProfile>(Add, SelectedUserProfile != null);
+            DeleteCommand = new RelayCommand<IUserProfile>(Delete, SelectedUserProfile != null);
+            CancelCommand = new RelayCommand(Cancel);
         }
+        #endregion Constructor
 
         #region Properties
         #region Normal Properties
@@ -35,11 +40,14 @@ namespace StoreApp.ViewModel
             get => _userProfile;
             set => Set(ref _userProfile, value);
         }
-
         public IUserProfile SelectedUserProfile
         {
             get => _selectedUserProfile;
-            set => Set(ref _selectedUserProfile, value==null? new UserProfile(): value);
+            set
+            {
+                Set(ref _selectedUserProfile, value);//value == null ? new UserProfile() : value
+                //IsButtonEnable = !(_selectedUserProfile == null);
+            }
         }
 
 
@@ -55,7 +63,7 @@ namespace StoreApp.ViewModel
             }
         }
 
-        public RelayCommand DeleteCommand
+        public RelayCommand<IUserProfile> DeleteCommand
         {
             get => _deleteCommand;
             set
@@ -70,7 +78,7 @@ namespace StoreApp.ViewModel
             set => Set(ref _editCommand, value); 
         }
 
-        public RelayCommand AddCommand
+        public RelayCommand<IUserProfile> AddCommand
         {
             get => _addCommand;
             set
@@ -103,21 +111,36 @@ namespace StoreApp.ViewModel
         private void Modify(IUserProfile usr)
         {
             _userProfileDAO.ModifyUserProfile(usr);
+            SelectedUserProfile = null;
         }
 
+        private void Add(IUserProfile obj)
+        {
+            _userProfileDAO.AddUserProfile(obj);
+        }
+
+        private void Delete(IUserProfile obj)
+        {
+            _userProfileDAO.DeleteUserProfile(obj);
+        }
+
+        private void Cancel()
+        {
+            _selectedUserProfile = null;
+        }
         #endregion Methods
 
         #region Private Variables
         private string _myProperty = "User Profile Page";
         private INavigationService<NavigationPage> _navigationService;
-        private RelayCommand _addCommand;
+        private RelayCommand<IUserProfile> _addCommand;
         private RelayCommand<IUserProfile> _editCommand;
-        private RelayCommand _deleteCommand;
+        private RelayCommand<IUserProfile> _deleteCommand;
         private RelayCommand _cancelCommand;
         private RelayCommand _loadCommand;
         private ObservableCollection<IUserProfile> _userProfile = new ObservableCollection<IUserProfile>();
         private UserProfileDataProvider _userProfileDAO = new UserProfileDataProvider();
-        private IUserProfile _selectedUserProfile = new UserProfile();
+        private IUserProfile _selectedUserProfile = null;
         #endregion Private Variables
     }
 }

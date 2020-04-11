@@ -24,5 +24,15 @@ namespace StoreApp.View
         {
             InitializeComponent();
         }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void LstUsrProfiles_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

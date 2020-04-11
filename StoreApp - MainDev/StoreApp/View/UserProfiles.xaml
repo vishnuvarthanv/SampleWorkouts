@@ -16,6 +16,22 @@
             <i:InvokeCommandAction Command="{Binding LoadCommand}" />
         </i:EventTrigger>
     </i:Interaction.Triggers>
+    <Page.Resources>
+        <Style x:Key="BtnFalseStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding SelectedItem, ElementName=lstUsrProfiles}" Value="{x:Null}">
+                    <Setter Property="IsEnabled" Value="False" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="BtnTrueStyle" TargetType="{x:Type Button}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding SelectedItem, ElementName=lstUsrProfiles}" Value="{x:Null}">
+                    <Setter Property="IsEnabled" Value="True" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
     <Grid Height="Auto"
           HorizontalAlignment="Left"
           VerticalAlignment="Top">
@@ -23,7 +39,8 @@
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
-        <ListBox Grid.Column="0"
+        <ListBox x:Name="lstUsrProfiles"
+                 Grid.Column="0"
                  Width="180"
                  Height="232"
                  Margin="5,5,2,2"
@@ -139,17 +156,24 @@
                         Orientation="Horizontal">
                 <Button Width="60"
                         Margin="2"
-                        Content="Add" />
+                        Command="{Binding AddCommand}"
+                        Content="Add"
+                        Style="{StaticResource BtnTrueStyle}" />
+
                 <Button Width="60"
                         Margin="2"
                         Command="{Binding EditCommand}"
                         CommandParameter="{Binding SelectedUserProfile}"
-                        Content="Update" />
+                        Content="Update"
+                        Style="{StaticResource BtnFalseStyle}" />
                 <Button Width="60"
                         Margin="2"
-                        Content="Delete" />
+                        Command="{Binding DeleteCommand}"
+                        Content="Delete"
+                        Style="{StaticResource BtnFalseStyle}" />
                 <Button Width="60"
                         Margin="2"
+                        Command="{Binding CancelCommand}"
                         Content="Cancel" />
             </StackPanel>
             <StackPanel Grid.Row="7"
