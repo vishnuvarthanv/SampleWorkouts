@@ -91,7 +91,7 @@
                      Width="200"
                      Height="20"
                      Margin="5,0"
-                     Text="{Binding Path=SelectedUserProfile.Name}" />
+                     Text="{Binding Path=Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             <TextBlock Grid.Row="2"
                        Grid.Column="0"
                        Width="Auto"
@@ -105,7 +105,7 @@
                      Width="200"
                      Height="20"
                      Margin="5,0"
-                     Text="{Binding Path=SelectedUserProfile.Email}" />
+                     Text="{Binding Path=Email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
             <TextBlock Grid.Row="3"
                        Grid.Column="0"
@@ -120,7 +120,7 @@
                      Width="200"
                      Height="20"
                      Margin="5,0"
-                     Text="{Binding Path=SelectedUserProfile.Mobile}" />
+                     Text="{Binding Path=Mobile, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
             <TextBlock Grid.Row="4"
                        Grid.Column="0"
@@ -135,7 +135,7 @@
                      Width="200"
                      Height="50"
                      Margin="5,0"
-                     Text="{Binding Path=SelectedUserProfile.Address}" />
+                     Text="{Binding Path=Address, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
             <TextBlock Grid.Row="5"
                        Grid.Column="0"
@@ -150,7 +150,7 @@
                      Width="200"
                      Height="20"
                      Margin="5,0"
-                     Text="{Binding Path=SelectedUserProfile.Location}" />
+                     Text="{Binding Path=Location, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             <StackPanel Grid.Row="6"
                         Grid.ColumnSpan="2"
                         Orientation="Horizontal">

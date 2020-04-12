@@ -78,7 +78,7 @@ namespace StoreApp.RepositoryLayer
             if (userProfile != null)
             {
                 IUserProfile user = _userProfile.Where(x => x.Name == userProfile.Name).First();
-                _userProfile.Remove(userProfile);
+                _userProfile.Remove(user);
                 return true;
             }
             return false;

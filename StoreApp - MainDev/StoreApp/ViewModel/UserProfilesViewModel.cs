@@ -20,9 +20,9 @@ namespace StoreApp.ViewModel
         {
             _navigationService = navigationService;
             LoadCommand = new RelayCommand(OnLoad);
-            EditCommand = new RelayCommand<IUserProfile>(Modify, SelectedUserProfile != null);
-            AddCommand = new RelayCommand<IUserProfile>(Add, SelectedUserProfile != null);
-            DeleteCommand = new RelayCommand<IUserProfile>(Delete, SelectedUserProfile != null);
+            EditCommand = new RelayCommand(Modify, SelectedUserProfile != null);
+            AddCommand = new RelayCommand(Add, SelectedUserProfile != null);
+            DeleteCommand = new RelayCommand(Delete, SelectedUserProfile != null);
             CancelCommand = new RelayCommand(Cancel);
         }
         #endregion Constructor
@@ -46,11 +46,43 @@ namespace StoreApp.ViewModel
             set
             {
                 Set(ref _selectedUserProfile, value);//value == null ? new UserProfile() : value
-                //IsButtonEnable = !(_selectedUserProfile == null);
+                if(SelectedUserProfile!=null)
+                {
+                    this.Name = SelectedUserProfile.Name;
+                    this.Email = SelectedUserProfile.Email;
+                    this.Mobile = SelectedUserProfile.Mobile;
+                    this.Address = SelectedUserProfile.Address;
+                    this.Location = SelectedUserProfile.Location;
+                }
             }
         }
 
+        public string Name
+        {
+            get { return _name; }
+            set { Set(ref _name, value); }
+        }
+        public string Email
+        {
+            get { return _email; }
+            set { Set(ref _email, value); }
+        }
 
+        public string Mobile
+        {
+            get { return _mobile; }
+            set { Set(ref _mobile, value); }
+        }
+        public string Address
+        {
+            get { return _address; }
+            set { Set(ref _address, value); }
+        }
+        public string Location
+        {
+            get { return _location; }
+            set { Set(ref _location, value); }
+        }
         #endregion Normal Properties
 
         #region Command Properties
@@ -63,7 +95,7 @@ namespace StoreApp.ViewModel
             }
         }
 
-        public RelayCommand<IUserProfile> DeleteCommand
+        public RelayCommand DeleteCommand
         {
             get => _deleteCommand;
             set
@@ -72,13 +104,13 @@ namespace StoreApp.ViewModel
             }
         }
 
-        public RelayCommand<IUserProfile> EditCommand
+        public RelayCommand EditCommand
         {
             get => _editCommand;
             set => Set(ref _editCommand, value); 
         }
 
-        public RelayCommand<IUserProfile> AddCommand
+        public RelayCommand AddCommand
         {
             get => _addCommand;
             set
@@ -108,39 +140,78 @@ namespace StoreApp.ViewModel
             }
         }
 
-        private void Modify(IUserProfile usr)
+        private void Modify()
         {
+            IUserProfile usr = new UserProfile();
+            usr.Name = Name;
+            usr.Email = Email;
+            usr.Mobile = Mobile;
+            usr.Address = Address;
+            usr.Location = Location;
             _userProfileDAO.ModifyUserProfile(usr);
             SelectedUserProfile = null;
+            Clear();
         }
 
-        private void Add(IUserProfile obj)
+        private void Add()
         {
-            _userProfileDAO.AddUserProfile(obj);
+            IUserProfile usr = new UserProfile();
+            usr.Name = Name;
+            usr.Email = Email;
+            usr.Mobile = Mobile;
+            usr.Address = Address;
+            usr.Location = Location;
+            _userProfileDAO.AddUserProfile(usr);
+            SelectedUserProfile = null;
+            Clear();
         }
 
-        private void Delete(IUserProfile obj)
+        private void Delete()
         {
-            _userProfileDAO.DeleteUserProfile(obj);
+            IUserProfile usr = new UserProfile();
+            usr.Name = Name;
+            usr.Email = Email;
+            usr.Mobile = Mobile;
+            usr.Address = Address;
+            usr.Location = Location;
+            _userProfileDAO.DeleteUserProfile(usr);
+            SelectedUserProfile = null;
+            Clear(); 
         }
 
         private void Cancel()
         {
-            _selectedUserProfile = null;
+            SelectedUserProfile = null;
+            Clear();
+        }
+
+        public void Clear()
+        {
+            this.Name = string.Empty;
+            this.Email = string.Empty;
+            this.Mobile = string.Empty;
+            this.Address = string.Empty;
+            this.Location = string.Empty;
+            OnLoad();
         }
         #endregion Methods
 
         #region Private Variables
         private string _myProperty = "User Profile Page";
         private INavigationService<NavigationPage> _navigationService;
-        private RelayCommand<IUserProfile> _addCommand;
-        private RelayCommand<IUserProfile> _editCommand;
-        private RelayCommand<IUserProfile> _deleteCommand;
+        private RelayCommand _addCommand;
+        private RelayCommand _editCommand;
+        private RelayCommand _deleteCommand;
         private RelayCommand _cancelCommand;
         private RelayCommand _loadCommand;
         private ObservableCollection<IUserProfile> _userProfile = new ObservableCollection<IUserProfile>();
         private UserProfileDataProvider _userProfileDAO = new UserProfileDataProvider();
         private IUserProfile _selectedUserProfile = null;
+        private string _location;
+        private string _address;
+        private string _mobile;
+        private string _email;
+        private string _name;
         #endregion Private Variables
     }
 }
