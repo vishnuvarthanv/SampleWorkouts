@@ -1,14 +1,13 @@
 ﻿using StoreApp.Model;
+using StoreApp.Model.Interfaces;
 using StoreApp.RepositoryLayer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using StoreApp.Services;
+
 namespace StoreApp.BusinessLogicLayer
 {
-   public class ProductManager
+    public class ProductManager
     {
         #region Constructors
 
@@ -52,7 +51,7 @@ namespace StoreApp.BusinessLogicLayer
                                         "None","Gms","Kg","Packet"
                                     };
         }
-        public List<Items> GetItems(Categories cat)
+        public List<IItems> GetItems(ICategory cat)
         {
             try
             {
@@ -64,7 +63,7 @@ namespace StoreApp.BusinessLogicLayer
         }
 
 
-        public IList<Categories> GetCategory()
+        public IList<ICategory> GetCategory()
         {
             try
             {
@@ -76,7 +75,7 @@ namespace StoreApp.BusinessLogicLayer
             }
         }
 
-        public IList<Units> GetUnit()
+        public IList<IUnits> GetUnit()
         {
             try
             {
@@ -93,38 +92,5 @@ namespace StoreApp.BusinessLogicLayer
         ProductRepository productRepository = null;
         SqliteDataProvider dp = new SqliteDataProvider();
         #endregion
-    }
-
-    public class Categories
-    {
-        public string CategoryName { get; set; }
-
-        public string CategoryId { get; set; }
-    }
-
-    public class Units
-    {
-        public string UnitName { get; set; }
-
-        public string UnitId { get; set; }
-    }
-
-    public class Items
-    {
-        public string Item_Id { get; set; }
-
-        public string Item_Name { get; set; }
-
-        public string Cat_Id { get; set; }
-
-        public string Unit_Id { get; set; }
-
-        public float Price { get; set; }
-
-        public string Start_Date { get; set; }
-
-        public string End_Date { get; set; }
-
-        public string Active { get; set; }
     }
 }

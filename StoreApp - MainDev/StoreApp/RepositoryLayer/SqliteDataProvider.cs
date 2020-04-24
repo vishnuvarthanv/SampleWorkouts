@@ -4,6 +4,8 @@ using System.Data;
 using System.Data.SQLite;
 using System.IO;
 using StoreApp.BusinessLogicLayer;
+using StoreApp.Model;
+using StoreApp.Model.Interfaces;
 
 namespace StoreApp.RepositoryLayer
 {
@@ -44,15 +46,15 @@ namespace StoreApp.RepositoryLayer
 
             #region Methods
 
-            public bool Delete(Items Item)
+            public bool Delete(IItems Item)
             {
                 string sqlDelete = $@"DELETE FROM Friend WHERE Id='{Item.Item_Id}'";
                 return ExeNonQueryCommand(sqlDelete);
             }
 
-            public List<Items> GetAllItems()
+            public List<IItems> GetAllItems()
             {
-                var list = new List<Items>();
+                var list = new List<IItems>();
                 using (SQLiteConnection conn = new SQLiteConnection(ConnectionString))
                 {
                     conn.Open();
@@ -85,9 +87,9 @@ namespace StoreApp.RepositoryLayer
                 return list;
             }
 
-        public List<Categories> GetCategories()
+        public List<ICategory> GetCategories()
         {
-            var list = new List<Categories>();
+            var list = new List<ICategory>();
             using (SQLiteConnection conn = new SQLiteConnection(ConnectionString))
             {
                 conn.Open();
@@ -113,9 +115,9 @@ namespace StoreApp.RepositoryLayer
             return list;
         }
 
-        public List<Units> GetUnits()
+        public List<IUnits> GetUnits()
         {
-            var list = new List<Units>();
+            var list = new List<IUnits>();
             using (SQLiteConnection conn = new SQLiteConnection(ConnectionString))
             {
                 conn.Open();
@@ -141,9 +143,9 @@ namespace StoreApp.RepositoryLayer
             return list;
         }
 
-            public Items GetItemById(string id)
+            public IItems GetItemById(string id)
             {
-                Items Item = null;
+            IItems Item = null;
                 using (SQLiteConnection conn = new SQLiteConnection(ConnectionString))
                 {
                     conn.Open();
@@ -170,13 +172,13 @@ namespace StoreApp.RepositoryLayer
                 return Item;
             }
 
-            public bool Insert(Items Item)
+            public bool Insert(IItems Item)
             {
                 string sqlInsert = $@"INSERT INTO Friend VALUES('{Item.Item_Id}','{Item.Item_Name}','{Item.Cat_Id}','{Item.Unit_Id}','{Item.Price}','{Item.Start_Date}','{Item.End_Date}','{Item.Active}')";
                 return ExeNonQueryCommand(sqlInsert);
             }
 
-            public bool Update(Items Item)
+            public bool Update(IItems Item)
             {
                 string sqlUpdate = $@"UPDATE Friend SET item_name='{Item.Item_Name}', cat_id='{Item.Cat_Id}', unit_id='{Item.Unit_Id}', price='{Item.Price}', start_dt='{Item.Start_Date}', end_date='{Item.End_Date}', active='{Item.Active}' WHERE item_id='{Item.Item_Id}'";
                 return ExeNonQueryCommand(sqlUpdate);

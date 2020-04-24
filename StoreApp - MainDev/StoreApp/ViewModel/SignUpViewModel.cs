@@ -1,8 +1,7 @@
-﻿using System;
-using System.Windows;
-using GalaSoft.MvvmLight;
+﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using StoreApp.Services;
+using System.Windows;
 
 namespace StoreApp.ViewModel
 {

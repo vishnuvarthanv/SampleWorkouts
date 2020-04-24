@@ -1,12 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
-using StoreApp.BusinessLogicLayer;
-using StoreApp.Model;
 using StoreApp.Services;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Windows;
-using System.Windows.Input;
 
 namespace StoreApp.ViewModel
 {

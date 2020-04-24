@@ -1,5 +1,4 @@
-﻿using StoreApp.BusinessLogicLayer;
-using StoreApp.Model.Interfaces;
+﻿using StoreApp.Model.Interfaces;
 using System.Collections.Generic;
 
 namespace StoreApp.RepositoryLayer
@@ -7,18 +6,18 @@ namespace StoreApp.RepositoryLayer
     public interface IDataProvider
     {
         //bool Insert(IUserProfile userProfile);
-        bool Delete(Items item);
+        bool Delete(IItems item);
 
-        List<Items> GetAllItems();
+        List<IItems> GetAllItems();
 
-        Items GetItemById(string id);
+        IItems GetItemById(string id);
 
-        bool Insert(Items Item);
+        bool Insert(IItems Item);
 
-        bool Update(Items Item);
+        bool Update(IItems Item);
 
-        List<Categories> GetCategories();
+        List<ICategory> GetCategories();
 
-        List<Units> GetUnits();
+        List<IUnits> GetUnits();
     }
 }

@@ -233,4 +233,3 @@ D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.exe
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.pdb
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\View\MasterPages.g.cs
 D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\View\MasterPages.baml
-D:\GitHub\SampleWorkouts\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.csprojAssemblyReference.cache

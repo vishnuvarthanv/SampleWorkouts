@@ -1,8 +1,4 @@
 using GalaSoft.MvvmLight;
-using StoreApp.Model;
-using System;
-using System.Windows.Controls;
-using StoreApp.Helpers;
 using GalaSoft.MvvmLight.CommandWpf;
 using StoreApp.Services;
 

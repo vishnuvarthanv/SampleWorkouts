@@ -1,7 +1,6 @@
 using CommonServiceLocator;
 using GalaSoft.MvvmLight.Ioc;
 using StoreApp.Services;
-using System;
 
 namespace StoreApp.ViewModel
 {

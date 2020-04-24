@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Windows;
-using GalaSoft.MvvmLight;
+﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using StoreApp.BusinessLogicLayer;
-using StoreApp.Model;
+using StoreApp.Model.Interfaces;
 using StoreApp.Services;
+using System.Collections.ObjectModel;
+using System.Linq;
 
 namespace StoreApp.ViewModel
 {
@@ -17,9 +15,8 @@ namespace StoreApp.ViewModel
         {
             _navigationService = navigationService;
             productManager = new ProductManager();
-            //LoadedCommand = new RelayCommand(LoadMasterPages);
-            Units = new ObservableCollection<Units>(productManager.GetUnit());
-            CategoryValues = new ObservableCollection<Categories>(productManager.GetCategory());
+            Units = new ObservableCollection<IUnits>(productManager.GetUnit());
+            CategoryValues = new ObservableCollection<ICategory>(productManager.GetCategory());
         }
         #endregion Constructor
 
@@ -30,25 +27,24 @@ namespace StoreApp.ViewModel
             set => Set(ref _loadedCommand, value);
         }
 
-        public Categories SelectedCategory
+        public ICategory SelectedCategory
         {
             get => _selectedCategory;
-            //set => Set(ref _selectedCategory, value);
             set
             {
                 Set(ref _selectedCategory, value);
-                FreshItems = new ObservableCollection<Items>(productManager.GetItems(_selectedCategory));
+                FreshItems = new ObservableCollection<IItems>(productManager.GetItems(_selectedCategory));
                 SelectedItem = FreshItems?.First();
             }
         }
 
-        public ObservableCollection<Items> FreshItems
+        public ObservableCollection<IItems> FreshItems
         {
             get => _freshItems;
             set => Set(ref _freshItems, value);
         }
 
-        public Items SelectedItem
+        public IItems SelectedItem
         {
             get => _selectedItem;
             set
@@ -58,18 +54,18 @@ namespace StoreApp.ViewModel
             }
         }
 
-        public ObservableCollection<Categories> CategoryValues
+        public ObservableCollection<ICategory> CategoryValues
         {
             get => _categoryValues;
             set => Set(ref _categoryValues, value);
         }
-        public ObservableCollection<Units> Units
+        public ObservableCollection<IUnits> Units
         {
             get => _units;
             set => Set(ref _units, value);
         }
 
-        public Units SelectedUnits
+        public IUnits SelectedUnits
         {
             get => _selectedUnits;
             set => Set(ref _selectedUnits, value);
@@ -77,7 +73,7 @@ namespace StoreApp.ViewModel
         private void LoadMasterPages()
         {
             //_navigationService.NavigateTo("Home");
-            _categoryValues = new ObservableCollection<Categories>(productManager.GetCategory());
+            _categoryValues = new ObservableCollection<ICategory>(productManager.GetCategory());
         }
 
         #region Private Variables
@@ -85,12 +81,12 @@ namespace StoreApp.ViewModel
         private INavigationService<NavigationPage> _navigationService;
         private ProductManager productManager;
         private RelayCommand _loadedCommand;
-        private ObservableCollection<Categories> _categoryValues = null;
-        private Categories _selectedCategory;
-        private ObservableCollection<Items> _freshItems = null;
-        private Items _selectedItem;
-        private ObservableCollection<Units> _units = null;
-        private Units _selectedUnits;
+        private ObservableCollection<ICategory> _categoryValues = null;
+        private ICategory _selectedCategory;
+        private ObservableCollection<IItems> _freshItems = null;
+        private IItems _selectedItem;
+        private ObservableCollection<IUnits> _units = null;
+        private IUnits _selectedUnits;
         #endregion Private Variables
     }
 }
