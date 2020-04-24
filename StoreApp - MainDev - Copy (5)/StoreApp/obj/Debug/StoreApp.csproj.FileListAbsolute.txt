@@ -1,0 +1,168 @@
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\StoreApp.exe.config
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\StoreApp.exe
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\StoreApp.pdb
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\CommonServiceLocator.dll
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\GalaSoft.MvvmLight.dll
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\System.Windows.Interactivity.dll
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\GalaSoft.MvvmLight.pdb
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\GalaSoft.MvvmLight.xml
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp\StoreApp\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\MainWindow.baml
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\MainWindow.g.cs
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\App.g.cs
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\StoreApp_MarkupCompile.cache
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\StoreApp_MarkupCompile.lref
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\App.baml
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\StoreApp.g.resources
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\StoreApp.Properties.Resources.resources
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\StoreApp.csproj.GenerateResource.cache
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\StoreApp.csproj.CoreCompileInputs.cache
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\StoreApp.csproj.CopyComplete
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\StoreApp.exe
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\StoreApp.pdb
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\View\Page1.g.cs
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\View\Page1.baml
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\View\ItemSelectionView.g.cs
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\View\ShowCartView.g.cs
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\View\ItemSelectionView.baml
+D:\tutorials\dotnet\StoreApp\StoreApp\obj\Debug\View\ShowCartView.baml
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\StoreApp.exe.config
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\StoreApp.exe
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\StoreApp.pdb
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\CommonServiceLocator.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\GalaSoft.MvvmLight.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\System.Windows.Interactivity.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\GalaSoft.MvvmLight.pdb
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\GalaSoft.MvvmLight.xml
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\MainWindow.baml
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\MainWindow.g.cs
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\View\ItemSelectionView.g.cs
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\View\Page1.g.cs
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\View\ShowCartView.g.cs
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\App.g.cs
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\StoreApp_MarkupCompile.cache
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\StoreApp_MarkupCompile.lref
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\App.baml
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\View\ItemSelectionView.baml
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\View\Page1.baml
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\View\ShowCartView.baml
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\StoreApp.g.resources
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\StoreApp.Properties.Resources.resources
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\StoreApp.csproj.GenerateResource.cache
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\StoreApp.csproj.CoreCompileInputs.cache
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\StoreApp.csproj.CopyComplete
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\StoreApp.exe
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\StoreApp.pdb
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\View\Home.g.cs
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\View\Home.baml
+D:\tutorials\dotnet\StoreApp - Copy (2)\StoreApp\obj\Debug\StoreApp.csprojAssemblyReference.cache
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\StoreApp.exe.config
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\StoreApp.exe
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\StoreApp.pdb
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\CommonServiceLocator.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\GalaSoft.MvvmLight.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\System.Windows.Interactivity.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\GalaSoft.MvvmLight.pdb
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\GalaSoft.MvvmLight.xml
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.csprojAssemblyReference.cache
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\MainWindow.g.cs
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\View\Home.g.cs
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\View\ItemSelectionView.g.cs
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\View\ShowCartView.g.cs
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\App.g.cs
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp_MarkupCompile.cache
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp_MarkupCompile.lref
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\App.baml
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\MainWindow.baml
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\View\Home.baml
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\View\ItemSelectionView.baml
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\View\ShowCartView.baml
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.g.resources
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.Properties.Resources.resources
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.csproj.GenerateResource.cache
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.csproj.CoreCompileInputs.cache
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.csproj.CopyComplete
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.exe
+D:\tutorials\dotnet\StoreApp - MainDev\StoreApp\obj\Debug\StoreApp.pdb

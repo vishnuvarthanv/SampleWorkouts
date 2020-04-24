@@ -1,0 +1,282 @@
+﻿<Page x:Class="StoreApp.View.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:StoreApp.View"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      Title="{Binding TitlePageText, UpdateSourceTrigger=PropertyChanged}"
+      Height="Auto"
+      d:DesignHeight="450"
+      d:DesignWidth="400"
+      DataContext="{Binding SignUpViewModel, Source={StaticResource Locator}}"
+      mc:Ignorable="d">
+    <Page.Resources>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Width" Value="Auto" />
+        </Style>
+        <Style x:Key="LinkButton" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <TextBlock TextDecorations="Underline">
+                            <ContentPresenter />
+                        </TextBlock>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Foreground" Value="Blue" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="IsEnabled" Value="true" />
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Foreground" Value="Red" />
+                </Trigger>
+                <!--<MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding ElementName=quantity, Path=(Validation.HasError)}" Value="false" />
+                        <Condition Binding="{Binding ElementName=units, Path=(Validation.HasError)}" Value="false" />
+                    </MultiDataTrigger.Conditions>
+                    <Setter Property="IsEnabled" Value="true" />
+                </MultiDataTrigger>-->
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
+    <Grid Width="Auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="115.2" />
+            <ColumnDefinition Width="Auto" MinWidth="140.8" />
+            <ColumnDefinition Width="Auto" MinWidth="232" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="Panel"
+                    Grid.Row="0"
+                    Grid.ColumnSpan="3"
+                    Width="395"
+                    HorizontalAlignment="Left"
+                    Orientation="Vertical"
+                    Visibility="{Binding IsDefaultPage, UpdateSourceTrigger=PropertyChanged}">
+            <Button x:Name="btnSignIn"
+                    Margin="5,5"
+                    HorizontalAlignment="Center"
+                    Command="{Binding SignInCommand}"
+                    Content="Sign-In"
+                    FontSize="17"
+                    FontWeight="SemiBold"
+                    Style="{StaticResource LinkButton}" />
+            <Image Width="400"
+                   Height="300"
+                   Margin="5,5,5,5">
+                <Image.Source>
+                    <BitmapImage DecodePixelWidth="200" UriSource="/Resources/images/Groceries1.jpeg" />
+                </Image.Source>
+            </Image>
+            <Button x:Name="btnSignUp"
+                    Width="Auto"
+                    Height="26"
+                    Margin="5,5"
+                    HorizontalAlignment="Center"
+                    Command="{Binding SignUpCommand}"
+                    Content="Sign-Up"
+                    FontSize="17"
+                    FontWeight="SemiBold"
+                    Style="{StaticResource LinkButton}" />
+        </StackPanel>
+        <StackPanel x:Name="LoginPanel"
+                    Grid.Row="1"
+                    Grid.ColumnSpan="3"
+                    HorizontalAlignment="Left"
+                    Orientation="Horizontal"
+                    Visibility="{Binding IsSignIn, UpdateSourceTrigger=PropertyChanged}">
+            <Grid Width="390">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0"
+                           Grid.Column="0"
+                           Width="Auto"
+                           Height="20"
+                           HorizontalAlignment="Right"
+                           Text="User Id:" />
+                <TextBox x:Name="txtUserId"
+                         Grid.Row="0"
+                         Grid.Column="1"
+                         Width="200"
+                         Height="20"
+                         Margin="5,2"
+                         HorizontalAlignment="Left"
+                         VerticalAlignment="Center"
+                         Text="{Binding UserId, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+                <TextBlock Grid.Row="1"
+                           Grid.Column="0"
+                           Width="Auto"
+                           Height="20"
+                           HorizontalAlignment="Right"
+                           Text="SMS Code:" />
+                <TextBox x:Name="txtSMSCode"
+                         Grid.Row="1"
+                         Grid.Column="1"
+                         Width="200"
+                         Height="20"
+                         Margin="5,2"
+                         HorizontalAlignment="Left"
+                         VerticalAlignment="Center" />
+                <Button Grid.Row="2"
+                        Margin="5,5"
+                        VerticalAlignment="Center"
+                        Command="{Binding LoginCommand}"
+                        Content="Login" />
+                <TextBlock Grid.Row="3"
+                           Margin="5,5"
+                           Foreground="Red"
+                           Text="{Binding ErrorMsg, UpdateSourceTrigger=PropertyChanged}" />
+            </Grid>
+        </StackPanel>
+        <StackPanel x:Name="RegistrationPanel"
+                    Grid.Row="2"
+                    Grid.ColumnSpan="3"
+                    Width="395"
+                    HorizontalAlignment="Left"
+                    Orientation="Vertical"
+                    Visibility="{Binding IsSignUp, UpdateSourceTrigger=PropertyChanged}">
+            <Grid Width="Auto"
+                  Height="Auto"
+                  Margin="5,5"
+                  Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" MinWidth="64.8" />
+                    <ColumnDefinition Width="Auto" MinWidth="310.4" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Name="txtbName"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           Width="Auto"
+                           Height="Auto"
+                           Margin="5,5,5,5"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Text="Name" />
+                <TextBox Grid.Row="0"
+                         Grid.Column="1"
+                         Width="310"
+                         Height="24"
+                         Margin="2,2,0,2"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center" />
+                <TextBlock Name="txtbEmail"
+                           Grid.Row="1"
+                           Grid.Column="0"
+                           Width="Auto"
+                           Height="Auto"
+                           Margin="5,5,5,5"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Text="Email" />
+                <TextBox Grid.Row="1"
+                         Grid.Column="1"
+                         Width="310"
+                         Height="24"
+                         Margin="2,2,0,2"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center" />
+                <TextBlock Name="txtbMobile"
+                           Grid.Row="2"
+                           Grid.Column="0"
+                           Width="Auto"
+                           Height="Auto"
+                           Margin="5,5,5,5"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Text="Mobile" />
+                <TextBox Grid.Row="2"
+                         Grid.Column="1"
+                         Width="310"
+                         Height="24"
+                         Margin="2,2,0,2"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center" />
+                <TextBlock Name="txtbAddress"
+                           Grid.Row="3"
+                           Grid.Column="0"
+                           Width="Auto"
+                           Height="Auto"
+                           Margin="5,5,5,5"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Top"
+                           Text="Address" />
+                <TextBox Grid.Row="3"
+                         Grid.Column="1"
+                         Width="310"
+                         Height="45"
+                         Margin="2,2,0,2"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center" />
+                <TextBlock Name="txtbLocation"
+                           Grid.Row="4"
+                           Grid.Column="0"
+                           Width="Auto"
+                           Height="Auto"
+                           Margin="5,5,5,5"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Text="Location" />
+                <TextBox Grid.Row="4"
+                         Grid.Column="1"
+                         Width="310"
+                         Height="24"
+                         Margin="2,2,0,2"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center" />
+                <StackPanel Grid.Row="5"
+                            Grid.ColumnSpan="3"
+                            HorizontalAlignment="Center"
+                            Orientation="Horizontal">
+                    <Button Margin="5,5"
+                            HorizontalAlignment="Center"
+                            Content="Confirm" />
+                    <Button Margin="5,5"
+                            HorizontalAlignment="Center"
+                            Content="Reset" />
+                    <Button Margin="5,5"
+                            HorizontalAlignment="Center"
+                            Content="Cancel" />
+                </StackPanel>
+                <TextBlock Name="txtbError"
+                           Grid.Row="6"
+                           Grid.ColumnSpan="3"
+                           Width="Auto"
+                           Height="Auto"
+                           Margin="5,5,5,5"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Text=""
+                           Visibility="Collapsed" />
+            </Grid>
+        </StackPanel>
+
+    </Grid>
+
+
+</Page>
